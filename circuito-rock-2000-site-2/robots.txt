@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sevenxprojects.github.io/circuito-rock-2000/sitemap.xml
