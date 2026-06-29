@@ -1,142 +1,55 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Circuito Rock 2000 | O Som de Uma Geracao</title>
-  <meta name="description" content="Circuito Rock 2000 - uma plataforma de entretenimento que celebra o rock nacional dos anos 2000." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Circuito Rock 2000 | O som de uma geracao</title>
+  <meta name="description" content="Circuito Rock 2000: uma plataforma de entretenimento ao vivo para celebrar a geracao que cresceu ouvindo o rock nacional dos anos 2000." />
   <meta property="og:title" content="Circuito Rock 2000" />
-  <meta property="og:description" content="O som de uma geracao. Musica, nostalgia, comunidade, marcas e experiencias." />
-  <meta property="og:image" content="assets/slides/slide-01.jpg" />
-  <link rel="preload" as="image" href="assets/slides/slide-01.jpg" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta property="og:description" content="O som de uma geracao." />
+  <meta property="og:image" content="assets/images/slides/slide-01.jpg" />
+  <style>
+:root{--pink:#ff0a78;--blue:#0d7bff;--bg:#050505;--paper:#f1ece1;--muted:#b8b8b8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 10% 0%,rgba(255,10,120,.18),transparent 28%),radial-gradient(circle at 90% 20%,rgba(13,123,255,.12),transparent 28%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px);background-size:auto,auto,100% 5px;pointer-events:none;z-index:-1}.topbar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 36px;background:linear-gradient(to bottom,rgba(0,0,0,.82),rgba(0,0,0,.08));backdrop-filter:blur(8px)}.brand{color:#fff;text-decoration:none;font-weight:900;letter-spacing:.04em}.brand strong{font-size:1.25rem}.brand span{display:block;color:var(--pink);font-size:.95rem;line-height:.8}.topbar nav{display:flex;gap:22px}.topbar nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:.76rem;letter-spacing:.12em}.hero{min-height:100vh;position:relative;display:grid;place-items:center;padding:110px 26px 50px;isolation:isolate}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72;z-index:-2}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.25),rgba(0,0,0,.85));z-index:-1}.heroText{max-width:960px;text-align:center}.tag,.kicker{color:var(--pink);text-transform:uppercase;font-weight:900;letter-spacing:.16em}.hero h1{font-size:clamp(4rem,13vw,12rem);line-height:.82;margin:10px 0;text-transform:uppercase;text-shadow:8px 8px 0 #000}.hero p{font-size:clamp(1rem,2vw,1.45rem)}.btn{display:inline-block;margin-top:24px;background:var(--pink);color:#fff;text-decoration:none;text-transform:uppercase;font-weight:900;letter-spacing:.08em;padding:16px 22px;border:2px solid #fff;box-shadow:7px 7px 0 #000;transform:rotate(-1deg)}.section{max-width:1280px;margin:auto;padding:110px 36px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.section h2{font-size:clamp(2.4rem,6vw,5.8rem);line-height:.9;margin:10px 0 24px;text-transform:uppercase}.section p{font-size:1.14rem;line-height:1.65;color:#e3e3e3}.poster{width:100%;border:2px solid rgba(255,255,255,.2);box-shadow:0 0 60px rgba(255,10,120,.18);transform:rotate(-1deg)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}.stats div,.cards article{background:#0d0d0d;border:1px solid rgba(255,255,255,.14);padding:28px;box-shadow:10px 10px 0 rgba(255,10,120,.18)}.stats strong{display:block;color:var(--pink);font-size:4.8rem;line-height:1}.stats span{font-weight:900;text-transform:uppercase}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}.cards article{padding:0;overflow:hidden}.cards img{width:100%;height:320px;object-fit:cover;display:block}.cards h3{font-size:2.2rem;color:var(--pink);margin:20px 22px 4px;text-transform:uppercase}.cards p{margin:0 22px 24px}.list{columns:2;list-style:none;padding:0;margin:24px 0}.list li{margin:0 0 12px;padding:12px 14px;background:#111;border-left:5px solid var(--pink);text-transform:uppercase;font-weight:900}.opportunity{text-align:center}.opportunity p{font-size:1.6rem;color:#fff}footer{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:70px 36px;background:#000;border-top:1px solid rgba(255,255,255,.12)}footer img{width:100%;max-height:520px;object-fit:cover}footer h2{font-size:4rem;line-height:.9;margin:0;text-transform:uppercase}footer .small{color:#888;font-size:.9rem}@media(max-width:860px){.topbar{padding:14px 18px}.topbar nav{display:none}.grid2,footer{grid-template-columns:1fr}.section{padding:72px 20px}.stats,.cards{grid-template-columns:1fr}.hero h1{font-size:4.1rem}.cards img{height:auto}.list{columns:1}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:translateY(0)}
+
+  </style>
 </head>
 <body>
-  <div class="cursor-glow"></div>
-  <header class="site-header" id="topo">
-    <a href="#topo" class="brand" aria-label="Circuito Rock 2000"><span>CIRCUITO</span><strong>ROCK</strong><em>2000</em></a>
-    <button class="menu-toggle" aria-label="Abrir menu">MENU</button>
-    <nav class="site-nav">
-      <a href="#manifesto">Manifesto</a>
-      <a href="#projeto">Projeto</a>
-      <a href="#lineup">Line-up</a>
-      <a href="#tour">Tour</a>
-      <a href="#patrocinio">Patrocinio</a>
-      <a class="nav-cta" href="#contato">Contato</a>
-    </nav>
+  <header class="topbar">
+    <a class="brand" href="#home">CIRCUITO <strong>ROCK</strong><span>2000</span></a>
+    <nav><a href="#projeto">Projeto</a><a href="#lineup">Line-up</a><a href="#tour">Tour</a><a href="#patrocinio">Patrocinio</a><a href="#contato">Contato</a></nav>
   </header>
 
-  <main>
-    <section class="hero section-full" style="--bg:url('../assets/slides/slide-01.jpg')">
-      <div class="scrim"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">Uma geracao. Uma historia. Uma trilha sonora.</p>
-        <h1>Circuito Rock 2000</h1>
-        <p class="lead">O som de uma geracao volta aos palcos em uma plataforma de musica, nostalgia, comunidade e marcas.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projeto">Conheca o projeto</a>
-          <a class="btn" href="assets/downloads/circuito-rock-2000-apresentacao.pdf" target="_blank" rel="noopener">Baixar apresentacao</a>
-        </div>
-      </div>
+  <main id="home">
+    <section class="hero">
+      <img src="assets/images/slides/slide-01.jpg" alt="Circuito Rock 2000" />
+      <div class="heroText"><p class="tag">O som de uma geracao</p><h1>Circuito Rock 2000</h1><p>Uma plataforma criada para reconectar artistas, publico, cidades e marcas em torno de uma paixao comum: a musica.</p><a class="btn" href="#patrocinio">Conheca a oportunidade</a></div>
     </section>
 
-    <section id="manifesto" class="split section-dark">
-      <div class="copy reveal">
-        <span class="tag">Manifesto</span>
-        <h2>Antes do streaming, existiam os CDs gravados.</h2>
-        <p>Antes das redes sociais, existiam MSN, Fotolog e Orkut. Antes dos algoritmos, descobriamos bandas pela MTV, pelas radios, pelas revistas e pelos amigos.</p>
-        <p>Hoje, essa geracao volta a se encontrar.</p>
-      </div>
-      <figure class="poster reveal"><img src="assets/slides/slide-02.jpg" alt="Manifesto Circuito Rock 2000" loading="lazy"></figure>
-    </section>
+    <section class="section grid2" id="manifesto"><div><p class="kicker">Manifesto</p><h2>Hoje, essa geracao volta a se encontrar.</h2><p>Toda geracao inteira tem a mesma trilha sonora. Antes do streaming, existiam CDs gravados, MSN, Fotolog, Orkut, MTV, radios, revistas e shows que marcaram a memoria afetiva de uma epoca.</p></div><img class="poster" src="assets/images/slides/slide-02.jpg" alt="Manifesto" /></section>
 
-    <section class="cards-section">
-      <div class="section-title reveal">
-        <span class="tag">A geracao</span>
-        <h2>Quem cresceu ouvindo essas musicas continua presente.</h2>
-      </div>
-      <div class="cards">
-        <article class="card reveal"><strong>28 a 45 anos</strong><span>Publico adulto, ativo e com poder de consumo.</span></article>
-        <article class="card reveal"><strong>74%</strong><span>Priorizam gastar com experiencias marcantes.</span></article>
-        <article class="card reveal"><strong>85%</strong><span>Consideram a musica parte importante da identidade.</span></article>
-      </div>
-    </section>
+    <section class="section" id="geracao"><p class="kicker">A geracao</p><h2>Quem cresceu ouvindo essas musicas continua presente.</h2><div class="stats"><div><strong>28 a 45</strong><span>anos, publico adulto e ativo</span></div><div><strong>74%</strong><span>priorizam experiencias marcantes</span></div><div><strong>85%</strong><span>consideram musica parte da identidade</span></div></div></section>
 
-    <section id="projeto" class="feature section-full" style="--bg:url('../assets/slides/slide-08.jpg')">
-      <div class="scrim"></div>
-      <div class="feature-copy reveal">
-        <span class="tag">O projeto</span>
-        <h2>Muito alem de uma turne.</h2>
-        <p>Uma plataforma de entretenimento ao vivo criada para celebrar a geracao que cresceu ouvindo o rock nacional dos anos 2000.</p>
-      </div>
-    </section>
+    <section class="section grid2" id="projeto"><img class="poster" src="assets/images/slides/slide-08.jpg" alt="O projeto" /><div><p class="kicker">O projeto</p><h2>Muito alem de uma turne.</h2><p>O Circuito Rock 2000 nasce como uma plataforma de entretenimento ao vivo criada para celebrar a geracao que cresceu ouvindo o rock nacional dos anos 2000.</p><p>O projeto conecta artistas, fas, marcas e cidades em uma experiencia construida sobre musica, cultura, nostalgia e comunidade.</p></div></section>
 
-    <section id="lineup" class="lineup section-dark">
-      <div class="section-title reveal"><span class="tag">Line-up</span><h2>Tres bandas. Tres estilos. Uma geracao inteira.</h2></div>
-      <div class="band-grid">
-        <article class="band reveal"><img src="assets/slides/slide-11.jpg" alt="Fresno"><h3>Fresno</h3><p>Rock alternativo / emo</p></article>
-        <article class="band reveal"><img src="assets/slides/slide-12.jpg" alt="CPM 22"><h3>CPM 22</h3><p>Hardcore melodico / punk rock</p></article>
-        <article class="band reveal"><img src="assets/slides/slide-13.jpg" alt="Detonautas"><h3>Detonautas</h3><p>Rock nacional</p></article>
-      </div>
-    </section>
+    <section class="section" id="lineup"><p class="kicker">Line-up</p><h2>Tres bandas. Tres estilos. Uma geracao inteira.</h2><div class="cards"><article><img src="assets/images/slides/slide-11.jpg" alt="Fresno" /><h3>Fresno</h3><p>Emo / rock alternativo.</p></article><article><img src="assets/images/slides/slide-12.jpg" alt="CPM 22" /><h3>CPM 22</h3><p>Hardcore melodico / punk rock.</p></article><article><img src="assets/images/slides/slide-13.jpg" alt="Detonautas" /><h3>Detonautas</h3><p>Rock nacional.</p></article></div></section>
 
-    <section id="tour" class="split section-paper">
-      <figure class="poster reveal"><img src="assets/slides/slide-15.jpg" alt="Mapa da tour Circuito Rock 2000" loading="lazy"></figure>
-      <div class="copy reveal">
-        <span class="tag">A tour</span>
-        <h2>10 cidades, 3 estados, 5 meses de circulacao.</h2>
-        <p>O circuito percorre o Sul do Brasil conectando publico, artistas, cidades e marcas em torno da nostalgia musical dos anos 2000.</p>
-        <ul class="city-list">
-          <li>Blumenau</li><li>Caxias do Sul</li><li>Passo Fundo</li><li>Maringa</li><li>Londrina</li><li>Cascavel</li><li>Joinville</li><li>Porto Alegre</li><li>Balneario Camboriu</li><li>Curitiba</li>
-        </ul>
-      </div>
-    </section>
+    <section class="section grid2" id="tour"><div><p class="kicker">A tour</p><h2>10 cidades. 3 estados. 5 meses de circulacao.</h2><ul class="list"><li>Blumenau</li><li>Caxias do Sul</li><li>Passo Fundo</li><li>Maringa</li><li>Londrina</li><li>Cascavel</li><li>Joinville</li><li>Porto Alegre</li><li>Balneario Camboriu</li><li>Curitiba</li></ul></div><img class="poster" src="assets/images/slides/slide-15.jpg" alt="Mapa da tour" /></section>
 
-    <section class="experience section-dark">
-      <div class="section-title reveal"><span class="tag">Experiencia</span><h2>O publico permanece, convive e celebra.</h2></div>
-      <div class="experience-grid">
-        <img class="reveal" src="assets/slides/slide-17.jpg" alt="Experiencias do evento" loading="lazy">
-        <div class="xp-list reveal">
-          <p>Area gastronomica</p><p>Merchandising oficial</p><p>Experiencias de marca</p><p>Meet & Greet</p><p>Espacos instagramaveis</p><p>Conteudo ao vivo</p><p>Bandas locais</p>
-        </div>
-      </div>
-    </section>
+    <section class="section grid2"><img class="poster" src="assets/images/slides/slide-17.jpg" alt="Experiencia" /><div><p class="kicker">A experiencia</p><h2>O projeto foi pensado para ir alem dos shows.</h2><p>Area gastronomica, merchandising oficial, experiencias de marca, meet & greet, espacos instagramaveis, conteudo ao vivo e bandas locais.</p></div></section>
 
-    <section id="patrocinio" class="sponsors section-full" style="--bg:url('../assets/slides/slide-20.jpg')">
-      <div class="scrim"></div>
-      <div class="feature-copy reveal">
-        <span class="tag">Patrocinio</span>
-        <h2>Uma plataforma para marcas.</h2>
-        <p>O Circuito Rock 2000 oferece oportunidades de conexao real, visibilidade autentica, relacionamento, conteudo e associacao de valor.</p>
-        <a class="btn primary" href="#contato">Fale com a SevenX</a>
-      </div>
-    </section>
+    <section class="section grid2" id="patrocinio"><div><p class="kicker">Patrocinio</p><h2>Uma plataforma para marcas.</h2><p>Mais do que exposicao, o Circuito Rock 2000 cria oportunidades para que patrocinadores participem da jornada do publico antes, durante e depois da tour.</p><a class="btn" href="#contato">Falar com a SevenX</a></div><img class="poster" src="assets/images/slides/slide-21.jpg" alt="Contrapartidas comerciais" /></section>
 
-    <section class="gallery section-dark">
-      <div class="section-title reveal"><span class="tag">Apresentacao</span><h2>Veja a narrativa completa.</h2></div>
-      <div class="slide-gallery" aria-label="Galeria da apresentacao">
-        <img src="assets/slides/slide-03.jpg" alt="Perfil da geracao" loading="lazy">
-        <img src="assets/slides/slide-06.jpg" alt="Universo Rock 2000" loading="lazy">
-        <img src="assets/slides/slide-18.jpg" alt="Impacto nas cidades" loading="lazy">
-        <img src="assets/slides/slide-23.jpg" alt="Oportunidade" loading="lazy">
-      </div>
-    </section>
-
-    <section id="contato" class="contact section-paper">
-      <div class="contact-box reveal">
-        <span class="tag">Contato</span>
-        <h2>O som de uma geracao.</h2>
-        <p>Direcao Artistica e de Novos Negocios: Gian Zambon<br>Direcao Executiva: Bruno Neves<br>Direcao Criativa e de Planejamento: Adriano Pinheiro</p>
-        <a class="btn primary" href="mailto:contato@sevenx.com.br?subject=Circuito%20Rock%202000">Entrar em contato</a>
-      </div>
-    </section>
+    <section class="section opportunity"><p class="kicker">Oportunidade</p><h2>Mais do que patrocinar uma sequencia de shows.</h2><p>Uma oportunidade de fazer parte da trilha sonora de uma geracao.</p></section>
   </main>
 
-  <footer>
-    <strong>SEVENX</strong>
-    <span>Todos os direitos reservados para SevenX. Projeto conceitual protegido por direitos autorais e propriedade intelectual.</span>
-  </footer>
+  <footer id="contato"><img src="assets/images/slides/slide-24.jpg" alt="Circuito Rock 2000 SevenX" /><div><h2>Circuito Rock 2000</h2><p>Direcao Artistica e de Novos Negocios: Gian Zambon<br>Direcao Executiva: Bruno Neves<br>Direcao Criativa e de Planejamento: Adriano Pinheiro</p><p class="small">Todos os direitos reservados para SevenX.</p></div></footer>
+  <script>
+const els=document.querySelectorAll('.section,.cards article,.poster');
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.15});
+els.forEach(el=>{el.classList.add('reveal');io.observe(el)});
 
-  <script src="js/app.js"></script>
+  </script>
 </body>
 </html>
